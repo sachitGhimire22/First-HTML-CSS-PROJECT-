@@ -1,0 +1,48 @@
+<html>
+
+<head>
+    <title>my first webpage</title>
+    <link rel="stylesheet" href="sachit.css">
+</head>
+
+<body>
+    <div class="banner">
+        <div class="navbar">
+            <img src="ghar.png" class="logo">
+            <ul class="drop" id="drop">
+                <li><a href="#">home</a></li>
+                <li><a href="#">bedroom</a></li>
+                <li><a href="#">dining</a></li>
+                <li><a href="#">kitchen</a></li>
+                <li><a href="#">backyard</a></li>
+            </ul>
+            <div class="ham" id="ham" >
+                <div class="first   ham-div"></div>
+                <div class="second  ham-div"></div>
+                <div class="third   ham-div"></div>
+            </div>
+        </div>  
+        <div class="content">
+            <h1>Design your House</h1>
+            <p><b>"INTERIOR DESIGN </b>IS MAKING THE BEST POSSIBLE USE OF THE <b>AVAILABLE SPACE</b> <br> Make your
+                home,sweethome withus</p>
+
+            <div class="subscribe-div">
+                <a href="subscription.html">
+                    <button type="button" class="subscribe"><span></span>Subscribe</button>
+                </a>
+                <button type="button" class="learn-more"><span></span>learn more</button>
+
+            </div>
+        </div>
+    </div>
+    <script>
+        let hamMenu = document.getElementById('ham');
+        let menu = document.getElementById('drop');
+        hamMenu.addEventListener('click',()=>{
+            menu.classList.toggle('opened');
+        })
+    </script>
+</body>
+
+</html>
